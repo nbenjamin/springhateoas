@@ -7,6 +7,8 @@ import com.nbenja.springboot.domain.Type;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.List;
+
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 
@@ -45,4 +47,9 @@ public class CustomerAccountRepositoryTest {
         assertThat(actual.getType(), is(Type.CHECKING));
     }
 
+    @Test
+    public void getAccounts() throws Exception {
+        List<Account> actual = subject.getAccounts();
+        assertThat(actual.size(), is(2));
+    }
 }

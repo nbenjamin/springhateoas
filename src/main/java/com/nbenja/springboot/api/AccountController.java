@@ -4,6 +4,7 @@ import com.nbenja.springboot.domain.Account;
 import com.nbenja.springboot.repository.CustomerAccountRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.hateoas.ExposesResourceFor;
 import org.springframework.hateoas.Resource;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -21,6 +22,7 @@ import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 
 @RestController
 @RequestMapping("demo")
+@ExposesResourceFor(Account.class)
 public class AccountController {
 
     @Autowired
