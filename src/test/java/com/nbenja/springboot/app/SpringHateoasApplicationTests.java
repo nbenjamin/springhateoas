@@ -1,4 +1,4 @@
-package com.nbenja.springboot.hateoas;
+package com.nbenja.springboot.app;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
