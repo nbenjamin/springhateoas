@@ -46,4 +46,5 @@ Response
 }
 ```
  
-
+###Build Information###
+spring-hateoas (https://travis-ci.org/nbenjamin/springhateoas/builds)
